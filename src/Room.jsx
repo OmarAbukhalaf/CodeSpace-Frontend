@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Copy, Users, Code, LogOut } from "lucide-react";
 import socket from "./Socket";
-import Editor from "./components/Editor.jsx";
+import Editor from "./components/editor.jsx";
 import "./Room.css";
 
 function Room() {
