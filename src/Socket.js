@@ -1,5 +1,5 @@
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:4000"); // Use the same socket connection everywhere
+const socket = io("https://codespace-backend-production.up.railway.app"); 
 
 export default socket;
