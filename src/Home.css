@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: white;
+  line-height: 1.6;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #121212;
+  align-items: center;
+}
+
+.home-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 40px;
+  background-color: rgba(30, 30, 30, 0.5);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.home-nav > .logo-section {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  color: #4CAF50;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 20px 40px; /* Removed top padding, adjusted it below */
+  width: 100%;
+  max-width: 1200px;
+  flex-grow: 1;
+}
+
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.highlight {
+  color: #4CAF50;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  max-width: 600px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.action-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #1E1E1E;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.join-btn, .create-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.join-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.join-btn:hover {
+  background-color: #45a049;
+}
+
+.join-btn:disabled {
+  background-color: #2C2C2C;
+  cursor: not-allowed;
+}
+
+.create-btn {
+  background-color: #2C2C2C;
+  color: #e0e0e0;
+}
+
+.create-btn:hover {
+  background-color: #3C3C3C;
+}
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.or-divider span {
+  color: #666;
+  padding: 0 10px;
+  background-color: #121212;
+  position: relative;
+}
+
+.or-divider span::before,
+.or-divider span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 1px;
+  background-color: #333;
+}
+
+.or-divider span::before {
+  left: 100%;
+  margin-left: 10px;
+}
+
+.or-divider span::after {
+  right: 100%;
+  margin-right: 10px;
+}
+
+.error-message {
+  color: #FF6B6B;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
